@@ -1,0 +1,143 @@
+Create version control account on GitHub and using Git commands to create repository and push your code to GitHub
+
+Roll No – 03
+
+DELL@DESKTOP-72U7V6Q MINGW64 ~
+
+$ cd C:
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c
+
+$ cd gitass
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass
+
+$ git --version
+
+git version 2.36.0.windows.1
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass
+
+$ git config --global user.name sakshiaware
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass
+
+$ git config --global user.email "sakshiaware123@gmail.com"
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass
+
+$ git init
+
+Initialized empty Git repository in C:/gitass/.git/
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git add newajax.html
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git commit -m "first commit"
+
+[master (root-commit) cdd72be] first commit
+
+1 file changed, 82 insertions(+)
+
+create mode 100644 newajax.html
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git remote add origin https://github.com/sakshiaware/Application1.git
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git pull --rebase origin master
+
+fatal: couldn't find remote ref master
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git push -u origin master
+
+Enumerating objects: 3, done.
+
+Counting objects: 100% (3/3), done.
+
+Delta compression using up to 8 threads
+
+Compressing objects: 100% (2/2), done.
+
+Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+
+To https://github.com/sakshiaware/Application1.git
+
+* [new branch] master -> master
+
+branch 'master' set up to track 'origin/master'.
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git status
+
+On branch master
+
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ git reflog
+
+cdd72be (HEAD -> master, origin/master) HEAD@{0}: commit (initial): first commit
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ ls
+
+'Screenshot (275).png' 'Screenshot (276).png' 'Screenshot (277).png' newajax.html
+
+DELL@DESKTOP-72U7V6Q MINGW64 /c/gitass (master)
+
+$ ssh-keygen -t rsa -b 4096 -C "sakshiaware123@gmail.com"
+
+Generating public/private rsa key pair.
+
+Enter file in which to save the key (/c/Users/DELL/.ssh/id_rsa): c
+
+Enter passphrase (empty for no passphrase):
+
+Enter same passphrase again:
+
+Your identification has been saved in c
+
+Your public key has been saved in c.pub
+
+The key fingerprint is:
+
+SHA256:b7m5XXbykzNmGeCkdOZdQJfXr+RpGwI4gKV6O+XeXSQ sakshiaware123@gmail.com
+
+The key's randomart image is:
+
++---[RSA 4096]----+
+
+| o. .. +|
+
+| ... .oo|
+
+| . . . .o|
+
+| . o .. =. o|
+
+| . . . S.E.Oooo.|
+
+| . + . =.o*o |
+
+| o . + .o+o=|
+
+| o . o = o.% |
+
+| . . =.. o =|
+
++----[SHA256]-----+
